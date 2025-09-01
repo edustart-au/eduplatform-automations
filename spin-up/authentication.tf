@@ -29,10 +29,10 @@ this repo, in the tools/authentication directory.
 
 provider "akamai" {
   config {
-    client_secret = 'YfUnXwCSS%2B83NModjwATWrr7t91gE0pIXGIvuGSWEeQ%3D'
-    host          = 'akab-tdj3c5cruf63vm5w-kdddbzyoj4a4bwby%2eluna%2eakamaiapis.net'
-    access_token  = 'akab-wbstvpqkdqw6dgh4-d7otrvylvht3oi5v'
-    client_token  = 'akab-uo3fka6h3sd7j3c3-egxufng3rnhxlszh'
+    client_secret = var.akamai_client_secret
+    host          = var.akamai_host
+    access_token  = var.akamai_access_token
+    client_token  = var.akamai_client_token
     account_key   = var.akamai_account_key
   }
 }
